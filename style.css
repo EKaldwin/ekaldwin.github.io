@@ -1,0 +1,61 @@
+		.background{
+ 		background: url(images/background.jpg) no-repeat fixed;
+		background-size:cover;
+		background-position:center top;
+		background-attachment:scroll;
+		}
+		.menu{
+		width:px;
+		height:42px;
+		margin:0px;
+		margin-top:-2%;
+		background:url(images/menu_bg.jpg) no-repeat;
+		}
+		.menu ul{
+		list-style:none;
+		padding:0 0 0 15px;
+		margin:0px;
+		}
+		.menu ul li{
+		display:inline;
+		}
+		.menu ul li a{
+		float:left;
+		height:42px;
+		border:none;
+		padding:0 15px 0 15px;
+		text-decoration:none;
+		color:#fff;
+		line-height:42px;
+		font-size:11.3px;
+		font-family:'romulregular';
+		}
+		#main_container{
+		width:821px;
+		height:auto;
+		margin:auto;
+		margin-top:3.5%
+		}
+		.center_content{
+		width:821px;
+		height:auto;
+		clear:both;
+		padding:10px 0 10px 0;
+		background-color:white;
+		}
+		p.main_text{
+		padding:0px 45px 0 35px;
+		font-family:'romulregular';
+		}
+		@font-face {
+    	font-family: 'romulregular';
+   		src: url('font/romul-webfont.eot');
+   		src: url('font/romul-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/romul-webfont.woff') format('woff'),
+        url('font/romul-webfont.ttf') format('truetype'),
+        url('font/romul-webfont.svg#romulregular') format('svg');
+    	}
+ 		.rightimg  {
+    	float: right;
+    	margin:auto;
+   		}

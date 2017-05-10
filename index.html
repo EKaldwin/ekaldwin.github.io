@@ -1,0 +1,67 @@
+﻿<html>
+
+	</head>
+		<title>Dishonored 2</title>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(window).scroll(function(){
+parallax();
+})
+
+function parallax() {
+
+var wScroll = $(window).scrollTop();
+$('.background').css('background-position','center '+(wScroll*0.4)+'px')
+}
+
+if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+window.onmousewheel = document.onmousewheel = wheel;
+
+function wheel(event) {
+    var delta = 0;
+    if (event.wheelDelta) delta = event.wheelDelta / 120;
+    else if (event.detail) delta = -event.detail / 3;
+
+    handle(delta);
+    if (event.preventDefault) event.preventDefault();
+    event.returnValue = false;
+}
+
+function handle(delta) {
+    var time = 450;
+	var distance = 300;
+    
+    $('html,body').stop().animate({
+        scrollTop: $(window).scrollTop() - (distance * delta)
+    }, time );}
+</script>
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	
+	<body class="background" margin="0" style="background-size:100% 100%"> 
+		<div id="main_container">
+	<a href="index.html">
+	<img src="images/logo.png" style="width:821px; height:177px; margin-top:-10%;">
+	</a>
+			<div class="menu">
+				<ul>                                                                         
+					<li><a href="story.html">Сюжет</a></li>
+					<li><a href="feature.html">Ключевые особенности</a></li>
+					<li><a href="character.html">Персонажи</a></li>
+					<li><a href="weapons.html">Оружие</a></li>
+					<li><a href="arts.html">Иллюстрации</a></li>
+					<li><a href="music.html">Музыка</a></li></li>
+					<li><a href="info.html">О сайте</a></li>
+				</ul>
+			</div>
+		<div class="center_content">
+		<img src="images/Main.jpg" width="820.5px" height="420px">
+		<p class="main_text">Описание Игры</p>
+		<p class="main_text">В игре Dishonored 2, вы снова окажетесь в роли ассасина со сверхъестественными способностями.</p>
+		<p class="main_text">Сайт IGN назвал эту игру «удивительной» и «идеальным продолжением», Eurogamer признал ее «шедевром», а Game Informer считает, что «эта история о мести – одна из лучших в своем жанре и проходить мимо нее ни в коем случае нельзя»; Dishonored 2 – это продолжение знаменитого боевика Dishonored от Arkane Studios, завоевавшего более сотни наград «Игра года».</p> 
+		<p class="main_text">Окунитесь в удивительный мир, в котором мистика и технологии живут рука об руку. Решите, за кого играть: за императрицу Эмили Колдуин или за защитника короны, Корво Аттано. Выберите свой стиль: пройдите игру, не попавшись никому на глаза, воспользовавшись всем арсеналом убийственных приемов или соединив оба подхода так, как вам нравится. Найдите уникальное сочетание способностей, оружия и снаряжения, позволяющее с легкостью уничтожать врагов. Игра реагирует на каждое ваше решение: в зависимости от ваших действий у каждого задания может быть разный исход.</p>
+		</div>
+	</body>
+
+</html>
