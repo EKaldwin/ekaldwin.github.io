@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 
 	</head>
 		<title>Dishonored 2</title>
@@ -11,7 +11,7 @@ parallax();
 function parallax() {
 
 var wScroll = $(window).scrollTop();
-$('.background').css('background-position','center '+(wScroll*0.4)+'px')
+$('.background').css('background-position','center '+(wScroll*0.5)+'px')
 }
 
 if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
@@ -41,9 +41,11 @@ function handle(delta) {
 	
 	<body class="background" margin="0" style="background-size:100% 100%"> 
 		<div id="main_container">
-	<a href="index.html">
-	<img src="images/logo.png" style="width:821px; height:177px; margin-top:-10%;">
+	<p style="text-align: center;">
+	<a href="/">
+	<img src="images/logo.png" style="margin-top: -4.7%; margin-left: -1.6%;">
 	</a>
+	</p>
 			<div class="menu">
 				<ul>                                                                         
 					<li><a href="story.html">Сюжет</a></li>
