@@ -2,7 +2,7 @@
  		background: url(images/background.jpg) no-repeat fixed;
 		background-size:cover;
 		background-position:center top;
-		background-attachment:scroll;
+		transition: initial;
 		}
 		.menu{
 		width:px;
